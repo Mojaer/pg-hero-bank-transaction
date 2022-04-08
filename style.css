@@ -2,6 +2,7 @@ body {
     padding: 100px;
 }
 
+
 /* first page  */
 
 .log-in {
@@ -10,11 +11,13 @@ body {
     border-radius: 10px;
 }
 
+
 /* second page */
 
 #transaction {
-    /* display: none; */
+    display: none;
 }
+
 
 /* second page transaction display */
 
@@ -33,4 +36,11 @@ body {
 
 .balance {
     background-color: orange;
+}
+
+
+/* final transaction */
+
+#endTransaction {
+    display: none;
 }
