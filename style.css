@@ -24,7 +24,7 @@ body {
 }
 
 .deposit {
-    background-color: lightgreen;
+    background-color: yellowgreen;
 }
 
 .withdraw {
@@ -32,5 +32,5 @@ body {
 }
 
 .balance {
-    background-color: cadetblue;
+    background-color: orange;
 }
