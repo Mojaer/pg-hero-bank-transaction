@@ -21,14 +21,14 @@ depositBtn.addEventListener('click', function() {
     deposit.innerText = parseFloat(depositInput.value) + parseFloat(deposit.innerText);
 
     balance.innerText = parseFloat(balance.innerText) + parseFloat(depositInput.value);
-    depositInput.value = 0;
+    depositInput.value = '';
 })
 
 withdrawBtn.addEventListener('click', function() {
     withdraw.innerText = parseFloat(withdrawInput.value) + parseFloat(withdraw.innerText);
 
     balance.innerText = parseFloat(balance.innerText) - parseFloat(withdrawInput.value);
-    withdrawInput.value = 0;
+    withdrawInput.value = '';
 })
 
 // final transaction
