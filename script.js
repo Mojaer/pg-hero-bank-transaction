@@ -18,16 +18,16 @@ const depositBtn = document.getElementById('depositBtn');
 const withdrawBtn = document.getElementById('withdrawBtn');
 
 depositBtn.addEventListener('click', function() {
-    deposit.innerText = parseFloat(depositInput.value) + parseFloat(deposit.innerText);
+    deposit.innerText = (parseFloat(depositInput.value) || 0) + parseFloat(deposit.innerText);
 
-    balance.innerText = parseFloat(balance.innerText) + parseFloat(depositInput.value);
+    balance.innerText = parseFloat(balance.innerText) + (parseFloat(depositInput.value) || 0);
     depositInput.value = '';
 })
 
 withdrawBtn.addEventListener('click', function() {
-    withdraw.innerText = parseFloat(withdrawInput.value) + parseFloat(withdraw.innerText);
+    withdraw.innerText = (parseFloat(withdrawInput.value) || 0) + parseFloat(withdraw.innerText);
 
-    balance.innerText = parseFloat(balance.innerText) - parseFloat(withdrawInput.value);
+    balance.innerText = parseFloat(balance.innerText) - (parseFloat(withdrawInput.value) || 0);
     withdrawInput.value = '';
 })
 
